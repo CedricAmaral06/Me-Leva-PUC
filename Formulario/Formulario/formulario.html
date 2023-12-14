@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="formulario.css" />
+    <script src="formulario.js" defer></script>
+    <title>Formulário - Me Leva PUC</title>
+  </head>
+
+  <body>
+    <div class="box">
+      <form action="">
+        <fieldset>
+          <legend><b>ME LEVA PUC</b></legend>
+          <div class="inputBox">
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              class="inputUser"
+              required
+            />
+            <label for="nome" class="labelInput">Nome Completo</label>
+          </div>
+          <div class="inputBox">
+            <input
+              type="text"
+              name="email"
+              id="email"
+              class="inputUser"
+              required
+            />
+            <label for="email" class="labelInput">Email</label>
+          </div>
+          <div class="inputBox">
+            <input
+              type="tel"
+              name="telefone"
+              id="telefone"
+              class="inputUser"
+              required
+            />
+            <label for="telefone" class="labelInput">Telefone</label>
+          </div>
+          <p>Sexo:</p>
+          <input
+            type="radio"
+            id="feminino"
+            name="genero"
+            value="feminino"
+            required
+          />
+          <label for="feminino">Feminino</label>
+          <br />
+          <input
+            type="radio"
+            id="masculino"
+            name="genero"
+            value="masculino"
+            required
+          />
+          <label for="masculino">Masculino</label>
+          <br />
+          <input type="radio" id="Outro" name="genero" value="Outro" required />
+          <label for="Outro">Outro</label>
+          <br />
+          <label for="Data_Nascimento"><b>Data de Nascimento:</b></label>
+          <input
+            type="date"
+            name="Data_Nascimento"
+            id="Data_Nascimento"
+            class="inputUser"
+            required
+          />
+          <br />
+          <div class="inputBox">
+            <input type="text" name="Cidade" id="Cidade" required />
+            <label for="Cidade" class="labelInput">Cidade</label>
+          </div>
+          <div class="inputBox">
+            <input
+              type="text"
+              name="Estado"
+              id="Estado"
+              class="inputUser"
+              required
+            />
+            <label for="Estado" class="labelInput">Estado</label>
+          </div>
+          <div class="inputBox">
+            <input
+              type="text"
+              name="Endereço"
+              id="Endereço"
+              class="inputUser"
+              required
+            />
+            <label for="Endereço" class="labelInput">Endereço</label>
+          </div>
+          <div class="button-container">
+            <input type="button" value="SALVAR" onclick="salvarDados()" />
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
